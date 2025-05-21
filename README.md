@@ -40,6 +40,10 @@ pip install -qU beautifulsoup4 lxml
 ```
 
 ### Run the App
+First prepare the embeddings with this command:
+```sh
+python3 ./prepareembeddings/EmbeddingPrepare.py
+```
 Run the python app with this command
 ```sh
 python3 ./chatbot/driver/DriverClass.py
