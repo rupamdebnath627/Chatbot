@@ -40,7 +40,7 @@ pip install -qU beautifulsoup4 lxml
 ```
 
 ### Add your Google API Key
-Add you Google API Key in the file 
+Add your Google API Key in the file 
 ```sh
 ./chatbot/driver/.env
 ```
