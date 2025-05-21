@@ -39,7 +39,7 @@ pip install -qU langchain-text-splitters
 pip install -qU beautifulsoup4 lxml
 ```
 
-### Add you Google API Key
+### Add your Google API Key
 Add you Google API Key in the file 
 ```sh
 ./chatbot/driver/.env
