@@ -8,15 +8,11 @@ def launch_gradio(retriever):
 
     def stream_response(message, history):
         model = fetch_llm_model()
-        for msg in history:
-            if msg['role'] == "user":
-                history_langchain_format.append(HumanMessage(content=msg['content']))
-            elif msg['role'] == "assistant":
-                history_langchain_format.append(AIMessage(content=msg['content']))
         history_langchain_format.append(
             HumanMessage(content=create_prompt(retriever.invoke(message),message).to_string())
         )
         gpt_response = model.invoke(history_langchain_format)
+        history_langchain_format.append(AIMessage(content=gpt_response.content))
         history.append({"role": "user", "content": message})
         history.append({"role": "assistant", "content": gpt_response.content})
         return "", history
