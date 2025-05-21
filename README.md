@@ -39,6 +39,12 @@ pip install -qU langchain-text-splitters
 pip install -qU beautifulsoup4 lxml
 ```
 
+### Add you Google API Key
+Add you Google API Key in the file 
+```sh
+./chatbot/driver/.env
+```
+
 ### Run the App
 First prepare the embeddings with this command:
 ```sh
