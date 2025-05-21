@@ -2,4 +2,4 @@
 .env
 .idea
 *__pycache__*
-chatbot/driver/chroma_langchain_db*
+chatbot/driver/chroma_langchain_db/
