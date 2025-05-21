@@ -4,15 +4,15 @@ The chatbot has been developed using a RAG based model. The RAG based model is a
 
 
 ## Tools, Libraries, Classes used:
-Main Framework used : Langchain
-HTMLLoader : RecursiveUrlLoader
-TextSplitter: HTMLSemanticPreservingSplitter
-Embedding Tool : OllamaEmbeddings
-Embedding Model : mxbai-embed-large:335m
-Vector Store : ChromaDB
-Retriever Search Type : MMR
-ChatModel : Google Gemini
-UI : Gradio
+- Main Framework used : Langchain
+- HTMLLoader : RecursiveUrlLoader
+- TextSplitter: HTMLSemanticPreservingSplitter
+- Embedding Tool : OllamaEmbeddings
+- Embedding Model : mxbai-embed-large:335m
+- Vector Store : ChromaDB
+- Retriever Search Type : MMR
+- ChatModel : Google Gemini
+- UI : Gradio
 
 
 ## Flow Diagram
